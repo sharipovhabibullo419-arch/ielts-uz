@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --ink: #102033; --cream: #fffaf1; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--cream); font-family: Arial, Helvetica, sans-serif; }
+button, input, textarea { font: inherit; }
+.gradient { background: radial-gradient(circle at 78% 18%, #d9fff0 0, transparent 33%), linear-gradient(135deg,#fffaf1 0%,#effaf6 100%); }
+.grid-bg { background-image: linear-gradient(#d8e8e2 1px, transparent 1px), linear-gradient(90deg,#d8e8e2 1px, transparent 1px); background-size: 36px 36px; }
