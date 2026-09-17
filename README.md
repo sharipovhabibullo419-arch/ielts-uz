@@ -1,27 +1,12 @@
 # IELTS.uz
 
-AI-powered IELTS English tutor for Uzbek-speaking learners.
+IELTS.uz is an Uzbek-first AI IELTS tutor inspired by modern language-learning dashboards. It is an independent project and is not affiliated with IELTS.gg or any other service.
 
-## Run locally
+## Included
+- Marketing landing page at `/`
+- Logged-in-style learning dashboard at `/dashboard`
+- Uzbek-first AI chat endpoint at `/api/chat`
+- IELTS Speaking, Writing, Reading and Listening learning cards
+- Responsive layout for mobile and desktop
 
-```bash
-npm install
-npm run dev
-```
-
-Open http://localhost:3000.
-
-## Enable real AI replies
-
-Create `.env.local` (never commit it):
-
-```env
-OPENAI_API_KEY=your_key_here
-OPENAI_MODEL=gpt-4o-mini
-```
-
-Without the key, the chat safely runs in demo mode. The key is only used server-side in `app/api/chat/route.ts`.
-
-## Deploy
-
-Import this repository into Vercel, add `OPENAI_API_KEY` under Project Settings → Environment Variables, and deploy. Then connect the `ielts.uz` domain in Vercel and add the DNS records shown there at your domain registrar.
+See the existing setup instructions below for local development, AI configuration, and Vercel deployment.
